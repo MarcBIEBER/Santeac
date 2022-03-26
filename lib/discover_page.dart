@@ -8,6 +8,7 @@ import 'package:santeac/icons.dart';
 import 'package:santeac/widgets/discover_card.dart';
 import 'package:santeac/widgets/discover_small_card.dart';
 import 'package:santeac/widgets/svg_asset.dart';
+import 'package:santeac/detail_page_enfant.dart';
 
 class DiscoverPage extends StatefulWidget {
   const DiscoverPage({
@@ -111,10 +112,10 @@ class _DiscoverPageState extends State<DiscoverPage> {
             ), */
             SizedBox(height: 16.h),
             SizedBox(
-              height: 176.w,
+              height: MediaQuery.of(context).size.height,
               child: ListView(
                 physics: BouncingScrollPhysics(),
-                scrollDirection: Axis.horizontal,
+                scrollDirection: Axis.vertical,
                 children: [
                   SizedBox(width: 28.w),
                   DiscoverCard(
@@ -123,8 +124,9 @@ class _DiscoverPageState extends State<DiscoverPage> {
                     title: "Chambre parents",
                     subtitle: "",
                   ),
-                  SizedBox(width: 20.w),
+                  SizedBox(height: 20.h),
                   DiscoverCard(
+                    tag: "enfant",
                     onTap: onDepressionHealingTapped,
                     title: "Chambre de l\'enfant",
                     subtitle: "",
@@ -204,6 +206,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
   }
 
   void onDepressionHealingTapped() {
+    Get.to(() => DetailPageEnfant(), transition: Transition.rightToLeft);
   }
 
   void onSearchIconTapped() {
