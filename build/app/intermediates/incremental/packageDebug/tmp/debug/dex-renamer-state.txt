@@ -1,4 +1,4 @@
-#Sat Mar 26 10:15:03 CET 2022
-base.0=/home/issoire/Flutter/Santaec/v1/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Sat Mar 26 11:09:44 CET 2022
+base.0=/home/issoire/Flutter/Santaec/Santeac/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
