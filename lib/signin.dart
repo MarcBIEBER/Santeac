@@ -11,7 +11,7 @@ class _SignScreenState extends State<SignScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color(0xff121421),
       appBar: AppBar(
         title: const Text("Santeac"),
       ),
@@ -24,7 +24,7 @@ class _SignScreenState extends State<SignScreen> {
                 child: Container(
                     width: 250,
                     height: 187,
-                    child: Image.asset('assets/logo_santeac.jpeg')),
+                    child: Image.asset('assets/logo_santeac.png')),
               ),
             ),
             const Padding(
@@ -32,8 +32,14 @@ class _SignScreenState extends State<SignScreen> {
                   EdgeInsets.only(left: 15.0, right: 15.0, top: 50, bottom: 0),
               child: TextField(
                 decoration: InputDecoration(
+                    enabledBorder: const OutlineInputBorder(
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 255, 255, 255), width: 0.0),
+                    ),
                     border: OutlineInputBorder(),
                     labelText: 'Email',
+                    labelStyle: TextStyle(
+                      color: Colors.white,
+                    ),
                     hintText: 'Entrez un email valide tel que abc@gmail.com'),
               ),
             ),
@@ -43,9 +49,16 @@ class _SignScreenState extends State<SignScreen> {
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
+                    enabledBorder: const OutlineInputBorder(
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 255, 255, 255), width: 0.0),
+                    ),
                     border: OutlineInputBorder(),
                     labelText: 'Mot de passe',
-                    hintText: 'Entrez un mot de passe sécurisé'),
+                    labelStyle: TextStyle(
+                      color: Colors.white,
+                    ),
+                    hintText: 'Entrez un mot de passe sécurisé',
+                    hintStyle: TextStyle(color: Colors.white)),
               ),
             ),
             const Padding(
@@ -54,9 +67,17 @@ class _SignScreenState extends State<SignScreen> {
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
+                    enabledBorder: const OutlineInputBorder(
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 255, 255, 255), width: 0.0),
+                    ),
                     border: OutlineInputBorder(),
                     labelText: 'Mot de passe',
-                    hintText: 'Confirmez votre mot de passe'),
+                    labelStyle: TextStyle(
+                      color: Colors.white,
+                    ),
+                    hintText: 'Confirmez votre mot de passe',
+                    hintStyle: TextStyle(color: Colors.white)
+                    ),
               ),
             ),
             TextButton(
