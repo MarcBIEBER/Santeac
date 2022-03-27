@@ -671,6 +671,7 @@ class TMP extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: const Color(0xff121421),
         title: Text('Santeac'),
       ),
       backgroundColor: const Color(0xff121421),
@@ -679,8 +680,43 @@ class TMP extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Score: ' + Question1._conter.sum.toString(),
-              style: Theme.of(context).textTheme.headline6,
+              'Vous avez terminé de répondre au questionnaire. Acceptez-vous que les résultats soient transmis à votre professionnel de santé reférent ?\n\n\n',
+              style: TextStyle(
+                        color: Color(0xffffffff).withOpacity(0.7),
+                        fontWeight: FontWeight.w400,
+                        fontSize: 19.w),
+              textAlign: TextAlign.center,
+            ),
+            _createTextButton('Oui', context, const TMP2(), 11, 0),
+            _createTextButton('Non', context, const TMP2(), 11, 0),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class TMP2 extends StatelessWidget {
+  const TMP2({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: const Color(0xff121421),
+        title: Text('Santeac'),
+      ),
+      backgroundColor: const Color(0xff121421),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'Super Johanna ! Vos résultats ont été transmis\n\n\n',
+              style: TextStyle(
+                        color: Color(0xffffffff).withOpacity(0.7),
+                        fontWeight: FontWeight.w400,
+                        fontSize: 19.w),
               textAlign: TextAlign.center,
             ),
           ],
