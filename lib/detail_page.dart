@@ -272,6 +272,8 @@ TextButton _createTextButton(strToPrint, context, nQuestion, int point, int inde
   return TextButton(
     child: Text(
       strToPrint,
+      style: TextStyle(color: Color.fromARGB(255, 216, 120, 65), fontSize: 17.w),
+      textAlign: TextAlign.center,
     ),
     onPressed: () {
       Question1._conter.insert(index, point);
@@ -290,18 +292,18 @@ class Question1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xff121421),
+        backgroundColor: Color.fromARGB(255, 216, 120, 65),
         title: Text('Santeac'),
       ),
-      backgroundColor: const Color(0xff121421),
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Question 1: J’ai pu rire et prendre les choses du bon côté\n\n\n',
+              'Question 1 : J’ai pu rire et prendre les choses du bon côté\n\n\n',
               style: TextStyle(
-                        color: Color(0xffffffff).withOpacity(0.7),
+                        color: Color.fromARGB(255, 82, 82, 82).withOpacity(0.7),
                         fontWeight: FontWeight.w400,
                         fontSize: 19.w),
               textAlign: TextAlign.center,
@@ -365,18 +367,18 @@ class Question2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xff121421),
+        backgroundColor: Color.fromARGB(255, 216, 120, 65),
         title: Text('Santeac'),
       ),
-      backgroundColor: const Color(0xff121421),
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Question 2: Je me suis sentie confiante et joyeuse, en pensant à l’avenir\n\n\n',
+              'Question 2 : Je me suis sentie confiante et joyeuse, en pensant à l’avenir\n\n\n',
               style: TextStyle(
-                        color: Color(0xffffffff).withOpacity(0.7),
+                        color: Color.fromARGB(255, 82, 82, 82).withOpacity(0.7),
                         fontWeight: FontWeight.w400,
                         fontSize: 19.w),
               textAlign: TextAlign.center,
@@ -399,18 +401,18 @@ class Question3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xff121421),
+        backgroundColor: Color.fromARGB(255, 216, 120, 65),
         title: Text('Santeac'),
       ),
-      backgroundColor: const Color(0xff121421),
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Question 3: Je me suis reprochée, sans raison, d’être responsable quand les choses allaient mal\n\n\n',
+              'Question 3 : Je me suis reprochée, sans raison, d’être responsable quand les choses allaient mal\n\n\n',
               style: TextStyle(
-                        color: Color(0xffffffff).withOpacity(0.7),
+                        color: Color.fromARGB(255, 82, 82, 82).withOpacity(0.7),
                         fontWeight: FontWeight.w400,
                         fontSize: 19.w),
               textAlign: TextAlign.center,
@@ -433,18 +435,18 @@ class Question4 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xff121421),
+        backgroundColor: Color.fromARGB(255, 216, 120, 65),
         title: Text('Santeac'),
       ),
-      backgroundColor: const Color(0xff121421),
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Question 4: Je me suis sentie inquiète ou soucieuse sans motifs\n\n\n',
+              'Question 4 : Je me suis sentie inquiète ou soucieuse sans motifs\n\n\n',
               style: TextStyle(
-                        color: Color(0xffffffff).withOpacity(0.7),
+                        color: Color.fromARGB(255, 82, 82, 82).withOpacity(0.7),
                         fontWeight: FontWeight.w400,
                         fontSize: 19.w),
               textAlign: TextAlign.center,
@@ -467,18 +469,18 @@ class Question5 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xff121421),
+        backgroundColor: Color.fromARGB(255, 216, 120, 65),
         title: Text('Santeac'),
       ),
-      backgroundColor: const Color(0xff121421),
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Question 5: Je me suis sentie effrayée ou paniquée sans raisons\n\n\n',
+              'Question 5 : Je me suis sentie effrayée ou paniquée sans raisons\n\n\n',
               style: TextStyle(
-                        color: Color(0xffffffff).withOpacity(0.7),
+                        color: Color.fromARGB(255, 82, 82, 82).withOpacity(0.7),
                         fontWeight: FontWeight.w400,
                         fontSize: 19.w),
               textAlign: TextAlign.center,
@@ -501,18 +503,18 @@ class Question6 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xff121421),
+        backgroundColor: Color.fromARGB(255, 216, 120, 65),
         title: Text('Santeac'),
       ),
-      backgroundColor: const Color(0xff121421),
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Question 6: J’ai eu tendance à me sentir dépassée par les événements\n\n\n',
+              'Question 6 : J’ai eu tendance à me sentir dépassée par les événements\n\n\n',
               style: TextStyle(
-                        color: Color(0xffffffff).withOpacity(0.7),
+                        color: Color.fromARGB(255, 82, 82, 82).withOpacity(0.7),
                         fontWeight: FontWeight.w400,
                         fontSize: 19.w),
               textAlign: TextAlign.center,
@@ -535,18 +537,18 @@ class Question7 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xff121421),
+        backgroundColor: Color.fromARGB(255, 216, 120, 65),
         title: Text('Santeac'),
       ),
-      backgroundColor: const Color(0xff121421),
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Question 7: Je me suis sentie si malheureuse que j’ai eu des problèmes de sommeil\n\n\n',
+              'Question 7 : Je me suis sentie si malheureuse que j’ai eu des problèmes de sommeil\n\n\n',
               style: TextStyle(
-                        color: Color(0xffffffff).withOpacity(0.7),
+                        color: Color.fromARGB(255, 82, 82, 82).withOpacity(0.7),
                         fontWeight: FontWeight.w400,
                         fontSize: 19.w),
               textAlign: TextAlign.center,
@@ -569,18 +571,18 @@ class Question8 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xff121421),
+        backgroundColor: Color.fromARGB(255, 216, 120, 65),
         title: Text('Santeac'),
       ),
-      backgroundColor: const Color(0xff121421),
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Question 8: Je me suis sentie triste ou malheureuse\n\n\n',
+              'Question 8 : Je me suis sentie triste ou malheureuse\n\n\n',
               style: TextStyle(
-                        color: Color(0xffffffff).withOpacity(0.7),
+                        color: Color.fromARGB(255, 82, 82, 82).withOpacity(0.7),
                         fontWeight: FontWeight.w400,
                         fontSize: 19.w),
               textAlign: TextAlign.center,
@@ -603,18 +605,18 @@ class Question9 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xff121421),
+        backgroundColor: Color.fromARGB(255, 216, 120, 65),
         title: Text('Santeac'),
       ),
-      backgroundColor: const Color(0xff121421),
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Question 9: Je me suis sentie si malheureuse que j’en ai pleuré\n\n\n',
+              'Question 9 : Je me suis sentie si malheureuse que j’en ai pleuré\n\n\n',
               style: TextStyle(
-                        color: Color(0xffffffff).withOpacity(0.7),
+                        color: Color.fromARGB(255, 82, 82, 82).withOpacity(0.7),
                         fontWeight: FontWeight.w400,
                         fontSize: 19.w),
               textAlign: TextAlign.center,
@@ -637,18 +639,18 @@ class Question10 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xff121421),
+        backgroundColor: Color.fromARGB(255, 216, 120, 65),
         title: Text('Santeac'),
       ),
-      backgroundColor: const Color(0xff121421),
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Question 10: Il m’est arrivée de penser à me faire du mal\n\n\n',
+              'Question 10 : Il m’est arrivée de penser à me faire du mal\n\n\n',
               style: TextStyle(
-                        color: Color(0xffffffff).withOpacity(0.7),
+                        color: Color.fromARGB(255, 82, 82, 82).withOpacity(0.7),
                         fontWeight: FontWeight.w400,
                         fontSize: 19.w),
               textAlign: TextAlign.center,
@@ -671,18 +673,18 @@ class TMP extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xff121421),
+        backgroundColor: Color.fromARGB(255, 216, 120, 65),
         title: Text('Santeac'),
       ),
-      backgroundColor: const Color(0xff121421),
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Vous avez terminé de répondre au questionnaire. Acceptez-vous que les résultats soient transmis à votre professionnel de santé reférent ?\n\n\n',
+              'Tu viens de finir le questionnaire ! Acceptes-tu que les résultats soient transmis à ton professionnel de santé reférent ?\n\n\n',
               style: TextStyle(
-                        color: Color(0xffffffff).withOpacity(0.7),
+                        color: Color.fromARGB(255, 82, 82, 82).withOpacity(0.7),
                         fontWeight: FontWeight.w400,
                         fontSize: 19.w),
               textAlign: TextAlign.center,
@@ -703,18 +705,18 @@ class TMP2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xff121421),
+        backgroundColor: Color.fromARGB(255, 216, 120, 65),
         title: Text('Santeac'),
       ),
-      backgroundColor: const Color(0xff121421),
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Super Johanna ! Vos résultats ont été transmis\n\n\n',
+              'Super Johanna ! Tes résultats ont été transmis\n\n\n',
               style: TextStyle(
-                        color: Color(0xffffffff).withOpacity(0.7),
+                        color: Color.fromARGB(255, 82, 82, 82).withOpacity(0.7),
                         fontWeight: FontWeight.w400,
                         fontSize: 19.w),
               textAlign: TextAlign.center,
