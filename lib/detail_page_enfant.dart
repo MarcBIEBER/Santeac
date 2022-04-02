@@ -153,10 +153,6 @@ class _DetailPageEnfantState extends State<DetailPageEnfant> {
               ],
             ),
 
-
-
-
-
             Align(alignment: Alignment.topCenter,
             child:   Container(
               color:  Color(0xff121421),

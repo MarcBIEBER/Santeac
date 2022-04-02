@@ -119,7 +119,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                 children: [
                   SizedBox(width: 28.w),
                   DiscoverCard(
-                    tag: "quiz",
+                    tag: "parents",
                     onTap: onSleepsanteacTapped,
                     title: "Chambre parents",
                     subtitle: "",
